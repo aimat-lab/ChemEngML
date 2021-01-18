@@ -1,0 +1,11 @@
+name: ChemEngML
+dependencies:
+- python=3.8
+- scikit-learn
+- pandas
+- numpy
+- pip:
+  - tensorflow>=2.3.0
+  - mlflow>=1.12.0
+  - h5py
+  - tables
