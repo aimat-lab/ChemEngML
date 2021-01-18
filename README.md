@@ -1,7 +1,9 @@
 # CNNs to predict Drag coefficient (Cf) and Stanton number (St)
 
 Preprint: https://arxiv.org/todo
+
 Machine Learning for rapid discovery of laminarflow channel wall modifications that enhance heattransfer
+
 Alexander Stroh, Matthias Schniewind, Pascal Friederich, Bradley P. Ladewig
 
 Clone this repository and install it in editable mode into a conda environment of your choice using:
