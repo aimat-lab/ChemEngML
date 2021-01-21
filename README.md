@@ -2,11 +2,11 @@
 
 ## Publication
 
-Preprint: https://arxiv.org/todo
+Preprint: https://arxiv.org/abs/2101.08130
 
-**Machine Learning for rapid discovery of laminar flow channel wall modifications that enhance heat transfer**
+**Machine learning for rapid discovery of laminar flow channel wall modifications that enhance heat transfer**
 
-*Alexander Stroh, Matthias Schniewind, Pascal Friederich, Bradley P. Ladewig*
+*Matthias Schniewind, Alexander Stroh, Bradley P. Ladewig, Pascal Friederich*
 
 
 ## Installation
