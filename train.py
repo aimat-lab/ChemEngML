@@ -58,7 +58,6 @@ def _get_columns():
 
 class DataGenerator(tf.keras.utils.Sequence):
     def __init__(self, image_x, label_y, batch_size=2, shuffle=True):
-        # samples and labels should be numpy arrays (or tensors)
 
         self.image_x = image_x
         self.label_y = label_y
@@ -80,7 +79,6 @@ class DataGenerator(tf.keras.utils.Sequence):
         # Generate indexes of the batch
         indices = self.indices[index * self.batch_size: (index + 1) * self.batch_size]
 
-        #print("Batch %i: %i samples"%(index+1, len(indices)))
         if len(indices)<=2:
             exit("ERROR: batch size (%i) too small to split in two subsets"%(len(indices)))
 
@@ -204,7 +202,7 @@ def train(config, testing=False):
     y_test = y_test[test_indexes]
 
 
-    # overwrite some settings in test mode
+    # test mode
     if testing:
         print("Running in test mode")
         X = X[:300]
