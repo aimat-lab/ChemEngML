@@ -1,4 +1,4 @@
-# CNNs to predict Drag coefficient (Cf) and Stanton number (St)
+# Machine learning for rapid discovery of laminar flow channel wall modifications that enhance heat transfer
 
 ## Publication
 
@@ -6,7 +6,8 @@ Preprint: https://arxiv.org/abs/2101.08130
 
 **Machine learning for rapid discovery of laminar flow channel wall modifications that enhance heat transfer**
 
-*Matthias Schniewind, Alexander Stroh, Bradley P. Ladewig, Pascal Friederich*
+*Yuri Koide, Arjun J. Kaithakkal, Matthias Schniewind, Bradley P. Ladewig, Alexander Stroh, and Pascal
+Friederich*
 
 
 ## Installation
@@ -18,9 +19,7 @@ pip install -e ChemEngML/
 
 ## Usage
 
-To reproduce the learning curve run:
+To run the file:
 ```bash
-python ./ChemEngML/scripts/leaning_curve.py /path/to/features.h5 /path/to/labels.h5
+python3 train.py train_config.yaml --testing True
 ```
-
-Features and labels currently have to be requested from the authors but will be provided in an additional resource later.
