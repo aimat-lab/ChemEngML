@@ -134,7 +134,7 @@ def evaluate(name, output_path, X_train, y_train, X_val, y_val, model_kwargs, ep
         results.loc[name, 'trainable_parameters'] = np.sum([K.count_params(w) for w in model.trainable_weights])
     results.to_csv(os.path.join(output_path, 'results.csv'))
 
-    # Saving stuff
+    # Saving data
     with open(os.path.join(output_path, f'{name}_meta_data.npy'), 'bw') as f:
         dump(history.history, f)
     model.save(os.path.join(output_path, f'{name}_model'))
@@ -193,7 +193,7 @@ def train(config, testing=False):
     n_folds = 5
     X, X_test, y, y_test = load_data(dataset_path)
 
-    # adjust dataset size
+
     train_indexes = np.arange(len(X))
     np.random.shuffle(train_indexes)
     test_indexes = np.arange(len(X_test))
@@ -207,10 +207,10 @@ def train(config, testing=False):
     # overwrite some settings in test mode
     if testing:
         print("Running in test mode")
-        X = X[:500]
-        X_test = X_test[:500]
-        y = y[:500]
-        y_test = y_test[:500]
+        X = X[:300]
+        X_test = X_test[:300]
+        y = y[:300]
+        y_test = y_test[:300]
         batch_size = 6
         n_folds = 2
         epochs = 5
@@ -232,8 +232,6 @@ def train(config, testing=False):
     # Save the scaler
     with open(os.path.join(output_path, 'y_scaler.npy'), 'bw') as f:
         dump(y_scaler, f)
-
-    cv = KFold(n_splits = n_folds, shuffle=True)
 
     columns, metric_columns, true_columns = _get_columns()
     columns.append('trainable_parameters')
