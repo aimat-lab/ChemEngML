@@ -16,7 +16,7 @@ import tensorflow.keras.backend as K
 import yaml
 import tensorflow as tf
 
-from chem_eng_ai.architectures import standard_cnn
+from chem_eng_ml.architectures import standard_cnn
 
 
 METRIC_FUNCTIONS = dict(r2=sk_r2, mae=sk_mae, mse=sk_mse)
