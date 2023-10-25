@@ -1,0 +1,9 @@
+dataset_path: ./dataset/
+output_path: ./output/
+suggestion:
+  kernel_size: 7
+  n_conv_steps: 5
+  n_filters: 128
+  dense_size: 6000
+  final_lr: 0.000006104972368610974
+  dropout: 0.298613812629185
