@@ -16,7 +16,7 @@ python3 train.py train_config.yaml --testing True
 ```
 
 
-## Shap
+## Shap analysis
 Regarding SHAP library:
 https://github.com/shap/shap
 https://shap-lrjball.readthedocs.io/en/latest/generated/shap.DeepExplainer.html#shap.DeepExplainer.explain_row
