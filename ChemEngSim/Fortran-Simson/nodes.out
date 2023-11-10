@@ -1,0 +1,6 @@
+ starting MPI-3.1 code.
+ using    4 nodes with total    4 processors and    4 threads.
+ node    0: procs=   1 threads=   1 name=aimat-029-matthias-T490s
+ node    1: procs=   1 threads=   1 name=aimat-029-matthias-T490s
+ node    2: procs=   1 threads=   1 name=aimat-029-matthias-T490s
+ node    3: procs=   1 threads=   1 name=aimat-029-matthias-T490s
