@@ -1,0 +1,13 @@
+name: ChemEngSim
+channels:
+  - defaults
+dependencies:
+  - pyyaml
+  - pandas
+  - h5py
+  - numpy
+  - scipy
+  - python=3.8
+  - matplotlib
+  - tqdm
+  - pytables

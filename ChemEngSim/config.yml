@@ -1,0 +1,23 @@
+# Global config
+package_location: "ChemEngSim"  # relative path to the ChemEngSim folder, e.g. "ChemEngSim"
+base_dir: "all_channels"  # Folder to write data to, e.g. "grids"
+log_dir: "log"  # Path to log dir, e.g. "log"
+zfill: 6  # Length of folder names (for string.zfill())
+sample_dir: "random_sample"  # directory of the sample of generated channel geometries that should be simulated
+
+# Parameters specific for structure generation using generator.py
+start_count: 0  # start number for subfolder naming
+n_processes: 40  # Number of parallel processes. You will also have to change this manually in create_channels.sh
+ns: [2, 3, 4, 5, 6, 7, 8, 9, 10]  # Number of points per random walk
+symmetricals: [False]  # Generating symmetrical and non symmetrical channels
+rads: [.0, .05, .1, .15, .2]  # Controls curvature of Bezier curves
+edgys: [.0, .05, .1, .15, .2]  # Controls "edgyness" of Bezier curves
+x_stds: [.1, .2, .3, .4, .5, .6]  # Strength of variation in x-direction
+y_stds: [.05, .1, .15, .2]  # Strength of variation in y-direction
+spare: 0.5  # area that should be left empty for channel
+n_per_var: 20  # Number of random structures per parameter variation
+
+# Parameters specific for early_stopping.py
+round_t: 7  # Decimal precision for temperature convergence, null means maximum precision
+round_p: null  # Decimal precision for pressure convergence, null means maximum precision
+max_time: 30  # Maximum time to wait until one channel configuration has converged
