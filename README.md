@@ -31,7 +31,7 @@ Two things you have to manuallly modify to run the code:
 2) Input the location of the "X_train.npy" in hM_shap.py: location of the dataset used for training the ML model
 
 
-## Simulation Usage
+## ChemEngSim (simulations)
 When ChemEngSim is located in `./`:
 - Create a folder for the channel structures e.g. with `mkdir channels_1`
 - Create a folder for logging e.g. with `mkdir log`
